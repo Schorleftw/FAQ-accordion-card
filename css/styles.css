@@ -32,26 +32,61 @@ html {
 }
 
 html, body {
-    height: 100vh;
     /* Dont change width to 100vw when the default auto is better */
     font-family: var(--font);
     background-image: linear-gradient(var(--background-soft-violet), var(--background-soft-blue));
 }
 
-.card {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+.wrapper {
+    height: 100vh;
     display: flex;
+    justify-content: center;
     align-items: center;
-    background: white;
-    width: 70%;
-    height: 70%;
-    border-radius: 25px;
 }
 
-img {
-    filter: drop-shadow(30px 70px 2px var(--divider-light-grayish-blue));
+.card {
+    display: flex;
+    background: white;
+    border-radius: 25px;
+    width: 900px;
+    height: 500px;
+    justify-content: center;
+    align-items: center;
 }
+
+.card > * {
+    width: 50%;
+    height: 100%;
+}
+
+.picture {
+    position: relative;
+}
+
+.oof1 {
+    position: relative;
+    overflow: hidden;
+    height: 100%;
+}
+
+.woman {
+    position: relative;
+    right: 80px;
+    top: 70px;
+}
+
+.box {
+    position: absolute;
+    top: 41%;
+    left: -20.7%;
+}
+
+/* .card .picture .box {
+    position: relative;
+    bottom: 150px;
+    right: 90px;
+} */
+/* img {
+    filter: drop-shadow(30px 70px 2px var(--divider-light-grayish-blue));
+} */
 
