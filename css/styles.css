@@ -102,6 +102,10 @@ html, body {
     padding-bottom: 5px;
 }
 
+.collapsible:hover {
+    color: var(--text-soft-red);
+}
+
 .faq-content {
     display: none;
     overflow: hidden;
