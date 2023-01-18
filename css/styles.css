@@ -113,14 +113,15 @@ html, body {
 
 .collapsible:after {
     content: url(../images/icon-arrow-down.svg);
-    font-size: 8px;
-    margin-left: 10px;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
   }
   
-  .active:after {
-    /* transform: rotate(20deg); */
-    content: "\2796";
-  }
+.collapsible.active:after {
+    content: url(../images/icon-arrow-down.svg);
+    transform: rotate(180deg);
+}
 
 
 
