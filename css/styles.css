@@ -82,7 +82,7 @@ html, body {
     left: -20.7%;
 }
 
-/* FAQ Section */
+/* FAQ Section!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
 
 .faq {
     font-size: 15px;
@@ -122,14 +122,106 @@ html, body {
     transform: rotate(180deg);
 }
 
+@media only screen and (max-width: 500px) {
 
+    .wrapper {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 
-/* .card .picture .box {
-    position: relative;
-    bottom: 150px;
-    right: 90px;
-} */
-/* img {
-    filter: drop-shadow(30px 70px 2px var(--divider-light-grayish-blue));
-} */
+    .card {
+        display: flex;
+        flex-direction: column;
+        background: white;
+        border-radius: 25px;
+        width: 300px;
+        height: 500px;
+        justify-content: center;
+        align-items: center;
+    }
 
+    .picture-1 {
+        position: relative;
+        overflow: visible;
+        height: 100%;
+    }
+    .picture-2 {
+        /* Remove Space from picture2 div to not overshadow the button. 
+        Otherwise the button cant be clicked on mobile */
+        height: 0; 
+    } 
+
+    .picture-1 > img {
+        width: 250px;
+        height: 166px;
+    }
+
+    .picture-2 > img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .card > .faq {
+        width: 100%;
+        height: 80%;
+    }
+
+    .card > .pictures {
+        width: 100%;
+        height: 20%;
+        position: relative;
+    }
+
+    .woman {
+        position: relative;
+        right: -25px;
+        top: -100px;
+    }
+
+    .box {
+        position: relative;
+        top: -145px;
+        left: 20px;
+    }
+
+    /* FAQ */
+
+    .faq {
+        font-size: 11px;
+        font-weight: 700;
+        padding: 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    h1 {
+        margin: 0;
+    }
+
+    .collapsible {
+        border: none;
+        text-align: left;
+        background-color: white;
+        border-bottom: 1px solid var(--text-dark-grayish-blue);
+        padding-bottom: 5px;
+    }
+    
+    .faq-content {
+        display: none;
+        overflow: hidden;
+    }
+    
+    .collapsible:after {
+        content: url(../images/icon-arrow-down.svg);
+        float: right;
+        margin-left: 5px;
+      }
+      
+    .collapsible.active:after {
+        content: url(../images/icon-arrow-down.svg);
+        transform: rotate(180deg);
+    }
+}

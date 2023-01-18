@@ -1,6 +1,7 @@
 var coll = document.getElementsByClassName("collapsible");
 
 for (let i = 0; i < coll.length; i++) {
+  console.log(coll[i])
   coll[i].addEventListener("click", function() {
     this.classList.toggle("active");
     let content = this.nextElementSibling;
