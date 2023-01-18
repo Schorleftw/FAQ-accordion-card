@@ -59,11 +59,12 @@ html, body {
     height: 100%;
 }
 
-.picture {
+.pictures {
     position: relative;
+    height: 100%;
 }
 
-.oof1 {
+.picture-1 {
     position: relative;
     overflow: hidden;
     height: 100%;
@@ -80,6 +81,48 @@ html, body {
     top: 41%;
     left: -20.7%;
 }
+
+/* FAQ Section */
+
+.faq {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: auto;
+    font-size: var(--font-size);
+    gap: 40px;
+}
+
+.collapsible {
+    cursor: pointer;
+    border: none;
+    text-align: left;
+    background-color: white;
+    border-bottom: 1px solid var(--text-dark-grayish-blue);
+    padding-bottom: 5px;
+}
+
+.faq-content {
+    display: none;
+    overflow: hidden;
+}
+
+.faq > h1 {
+    margin-top: 80px;
+}
+
+.collapsible:after {
+    content: url(../images/icon-arrow-down.svg);
+    font-size: 8px;
+    margin-left: 10px;
+  }
+  
+  .active:after {
+    /* transform: rotate(20deg); */
+    content: "\2796";
+  }
+
+
 
 /* .card .picture .box {
     position: relative;
